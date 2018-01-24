@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learning jQuery</title>
+    <link rel="stylesheet" href="style1.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+        var htmlstring = "";            //this creates a viriable names htmlstring
+        for(var i= 0; i < 8; i++){                  //this creates a loop to determine how many images will appear on the page   
+            htmlstring += '<img src="cat.jpg" alt="">'              //this gives the variable a value of an image
+        }
+        htmlstring +='<button>Restore</button>'         //this creates a button ont he page
+
+        $(document).ready(function(){
+            $(".container").append(htmlstring)              //.append adds the images to the page, 8 times from the loop
+
+            $("img").click(function(){          //this makes the img clicable
+                $(this).hide("slow");                   //this tells it to hide the clicked img slowly
+            })
+
+            $('button').click(function(){           //this tells the button, when it is clicked to show the hidden images.
+                $('img').show();
+            })
+        })
+</script>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
