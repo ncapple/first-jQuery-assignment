@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learning jQuery</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.butt1').click(function(){
+                $('#img1').fadeOut()
+            })
+            $('.butt2').click(function(){
+                $('#img2').fadeOut()
+            })
+            $('.butt3').click(function(){
+                $('#img3').fadeOut()
+            })
+            $('.butt4').click(function(){
+                $('#img4').fadeOut()
+            })
+            $('.butt5').click(function(){
+                $('#img5').fadeOut()
+            })
+            $('.butt6').click(function(){
+                $('#img6').fadeOut()
+            })
+            $('.butt7').click(function(){
+                $('#img7').fadeOut()
+            })
+            $('.butt8').click(function(){
+                $('#img8').fadeOut()
+            })
+            $('.butt9').click(function(){
+                $('.cat1').fadeIn()
+            })
+        })
+
+
+</script>
+</head>
+<body>
+<div class="body">
+    <div class="imgs">
+        <button class="butt1"><img id="img1" class="cat1"  src="cat.jpg" alt=""></button>
+        <button class="butt2"><img id="img2" class="cat1"  src="cat.jpg" alt=""></button>
+    </div>
+    <div class="imgs">
+        <button class="butt3"><img id="img3" class="cat1"  src="cat.jpg" alt=""></button>
+        <button class="butt4"><img id="img4" class="cat1"  src="cat.jpg" alt=""></button>
+    </div>
+    <div class="imgs">
+        <button class="butt5"><img id="img5" class="cat1"  src="cat.jpg" alt=""></button>
+        <button class="butt6"><img id="img6" class="cat1"  src="cat.jpg" alt=""></button>
+    </div>
+    <div class="imgs">
+        <button class="butt7"><img id="img7" class="cat1"  src="cat.jpg" alt=""></button>
+        <button class="butt8"><img id="img8" class="cat1"  src="cat.jpg" alt=""></button>
+    </div>
+    <button class="butt9">Press me to reset the images</button>
+</div>
+</body>
+</html>
